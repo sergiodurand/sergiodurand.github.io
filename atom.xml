@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>bkpmind.com</title>
+  
+  <subtitle>Just some notes</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://bkpmind.com/"/>
+  <updated>2018-02-10T23:45:06.489Z</updated>
+  <id>http://bkpmind.com/</id>
+  
+  <author>
+    <name>Sergio Durand</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://bkpmind.com/2018/02/10/hello-world/"/>
+    <id>http://bkpmind.com/2018/02/10/hello-world/</id>
+    <published>2018-02-10T23:45:06.489Z</published>
+    <updated>2018-02-10T23:45:06.489Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
