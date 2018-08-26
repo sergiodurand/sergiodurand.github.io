@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bkpmind.com/"/>
-  <updated>2018-08-26T20:06:09.704Z</updated>
+  <updated>2018-08-26T22:37:02.155Z</updated>
   <id>http://bkpmind.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to solve a DHCP issue with Fedora</title>
+    <link href="http://bkpmind.com/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/"/>
+    <id>http://bkpmind.com/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/</id>
+    <published>2018-08-26T22:01:53.000Z</published>
+    <updated>2018-08-26T22:37:02.155Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;If you have problem with Fedora &amp;amp; DHCP maybe this post could be a “solution” for you.&lt;/p&gt;
+&lt;p&gt;The scenario: a network interface
+        
+      
+    
+    </summary>
+    
+    
+      <category term="fedora" scheme="http://bkpmind.com/tags/fedora/"/>
+    
+      <category term="linux" scheme="http://bkpmind.com/tags/linux/"/>
+    
+      <category term="dhcp" scheme="http://bkpmind.com/tags/dhcp/"/>
+    
+  </entry>
   
   <entry>
     <title>Xiaomi Mi Band 2 button problem</title>
