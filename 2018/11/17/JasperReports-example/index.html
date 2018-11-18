@@ -3,15 +3,20 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive | bkpmind.com</title>
+    <title>JasperReports example | bkpmind.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="bkpmind.com">
-<meta property="og:url" content="http://bkpmind.com/archives/index.html">
+    <meta name="description" content="I have created a simple Maven/Spring Boot project to demonstrate how to generate a PDF report using JasperReport library. Although it is a simple example I decided to use Jasper sub-report approach, t">
+<meta name="keywords" content="jasper,java,spring boot,maven,sqlite">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JasperReports example">
+<meta property="og:url" content="http://bkpmind.com/2018/11/17/JasperReports-example/index.html">
 <meta property="og:site_name" content="bkpmind.com">
+<meta property="og:description" content="I have created a simple Maven/Spring Boot project to demonstrate how to generate a PDF report using JasperReport library. Although it is a simple example I decided to use Jasper sub-report approach, t">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-11-18T13:09:08.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="bkpmind.com">
+<meta name="twitter:title" content="JasperReports example">
+<meta name="twitter:description" content="I have created a simple Maven/Spring Boot project to demonstrate how to generate a PDF report using JasperReport library. Although it is a simple example I decided to use Jasper sub-report approach, t">
     
 
     
@@ -213,25 +218,21 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2018</h1>
-            </div>
+            <section id="main"><article id="post-JasperReports-example" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/11/17/JasperReports-example/">JasperReports example</a>
+        <h1 class="article-title" itemprop="name">
+            JasperReports example
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2018/11/17/JasperReports-example/">
@@ -240,80 +241,135 @@ ga('send', 'pageview');
     </div>
 
 
-                    
-                    
+                        
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/jasper/">jasper</a>, <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/maven/">maven</a>, <a class="tag-link" href="/tags/spring-boot/">spring boot</a>, <a class="tag-link" href="/tags/sqlite/">sqlite</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/">How to solve a DHCP issue with Fedora</a>
-        </h1>
-    
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I have created a simple Maven/Spring Boot project to demonstrate how to generate a PDF report using JasperReport library. Although it is a simple example I decided to use Jasper sub-report approach, thus I give an example on how to build more complex reports.</p>
+<p>I also chose to use a SQLite database to provide the report data. It is a very simple database containing only one table. Since the project is using the DAO design pattern, you can adapt it to use another database without much effort.</p>
+<p>If you just want to run this example, you don’t need any IDE (Eclipse/Netbeans/IntelliJ). Assuming you are running Linux, you just need these following lines:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git clone https://github.com/sergiodurand/jasper-examples.git</span><br><span class="line"><span class="meta">$</span> cd jasper-examples</span><br><span class="line"><span class="meta">$</span> ./mvnw spring-boot:run</span><br><span class="line"><span class="meta">$</span> xdg-open /tmp/report.pdf</span><br></pre></td></tr></table></figure>
+<p>For more technical details about this project or if you want to get access to the source code, go the the <a href="https://github.com/sergiodurand/jasper-examples" target="_blank" rel="noopener">jasper-examples</a> Github repository.</p>
 
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/">
-            <time datetime="2018-08-26T22:01:53.000Z" itemprop="datePublished">2018-08-26</time>
-        </a>
-    </div>
-
-
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/dhcp/">dhcp</a>, <a class="tag-link" href="/tags/fedora/">fedora</a>, <a class="tag-link" href="/tags/linux/">linux</a>
-    </div>
-
-                </div>
-            </div>
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/02/11/Xiaomi-Mi-Band-2-button-problem/">Xiaomi Mi Band 2 button problem</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/02/11/Xiaomi-Mi-Band-2-button-problem/">
-            <time datetime="2018-02-11T20:23:16.000Z" itemprop="datePublished">2018-02-11</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/miband/">miband</a>
-    </div>
 
-                </div>
-            </div>
-        </div>
-    
 </div>
+
+    <a data-url="http://bkpmind.com/2018/11/17/JasperReports-example/" data-id="cjomwf9tp00006xpvgwjvlorc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://bkpmind.com/2018/11/17/JasperReports-example/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://bkpmind.com/2018/11/17/JasperReports-example/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">How to solve a DHCP issue with Fedora</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -420,11 +476,13 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://bkpmind.com/2018/11/17/JasperReports-example/';
+        
+        this.page.identifier = 'JasperReports-example';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'bkpmind' + '.disqus.com/count.js';
+        s.src = '//' + 'bkpmind' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

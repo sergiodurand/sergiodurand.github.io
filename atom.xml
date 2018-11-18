@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bkpmind.com/"/>
-  <updated>2018-08-26T22:37:02.155Z</updated>
+  <updated>2018-11-18T13:09:08.728Z</updated>
   <id>http://bkpmind.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JasperReports example</title>
+    <link href="http://bkpmind.com/2018/11/17/JasperReports-example/"/>
+    <id>http://bkpmind.com/2018/11/17/JasperReports-example/</id>
+    <published>2018-11-17T21:22:01.000Z</published>
+    <updated>2018-11-18T13:09:08.728Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;I have created a simple Maven/Spring Boot project to demonstrate how to generate a PDF report using JasperReport library. Although it is
+        
+      
+    
+    </summary>
+    
+    
+      <category term="jasper" scheme="http://bkpmind.com/tags/jasper/"/>
+    
+      <category term="java" scheme="http://bkpmind.com/tags/java/"/>
+    
+      <category term="spring boot" scheme="http://bkpmind.com/tags/spring-boot/"/>
+    
+      <category term="maven" scheme="http://bkpmind.com/tags/maven/"/>
+    
+      <category term="sqlite" scheme="http://bkpmind.com/tags/sqlite/"/>
+    
+  </entry>
   
   <entry>
     <title>How to solve a DHCP issue with Fedora</title>

@@ -167,11 +167,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                2
+                3
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                4
+                9
                 <span>tags</span>
             </div>
         </div>
@@ -214,6 +214,137 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-JasperReports-example" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/11/17/JasperReports-example/">JasperReports example</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/11/17/JasperReports-example/">
+            <time datetime="2018-11-17T21:22:01.000Z" itemprop="datePublished">2018-11-17</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/jasper/">jasper</a>, <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/maven/">maven</a>, <a class="tag-link" href="/tags/spring-boot/">spring boot</a>, <a class="tag-link" href="/tags/sqlite/">sqlite</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I have created a simple Maven/Spring Boot project to demonstrate how to generate a PDF report using JasperReport library. Although it is a simple example I decided to use Jasper sub-report approach, thus I give an example on how to build more complex reports.</p>
+<p>I also chose to use a SQLite database to provide the report data. It is a very simple database containing only one table. Since the project is using the DAO design pattern, you can adapt it to use another database without much effort.</p>
+<p>If you just want to run this example, you don’t need any IDE (Eclipse/Netbeans/IntelliJ). Assuming you are running Linux, you just need these following lines:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git clone https://github.com/sergiodurand/jasper-examples.git</span><br><span class="line"><span class="meta">$</span> cd jasper-examples</span><br><span class="line"><span class="meta">$</span> ./mvnw spring-boot:run</span><br><span class="line"><span class="meta">$</span> xdg-open /tmp/report.pdf</span><br></pre></td></tr></table></figure>
+<p>For more technical details about this project or if you want to get access to the source code, go the the <a href="https://github.com/sergiodurand/jasper-examples" target="_blank" rel="noopener">jasper-examples</a> Github repository.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://bkpmind.com/2018/11/17/JasperReports-example/" data-id="cjomwf9tp00006xpvgwjvlorc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://bkpmind.com/2018/11/17/JasperReports-example/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://bkpmind.com/2018/11/17/JasperReports-example/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-How-to-solve-a-DHCP-issue-with-Fedora" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -272,7 +403,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://bkpmind.com/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/" data-id="cjlju2ybb00007dpv3c91ampq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://bkpmind.com/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/" data-id="cjomwf9tx00016xpvukp05cmq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -410,7 +541,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://bkpmind.com/2018/02/11/Xiaomi-Mi-Band-2-button-problem/" data-id="cjlju2ybh00017dpv4sc8a9vt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://bkpmind.com/2018/02/11/Xiaomi-Mi-Band-2-button-problem/" data-id="cjomwf9u300036xpvfq9fxj5i" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -502,6 +633,15 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/17/JasperReports-example/" class="title">JasperReports example</a></p>
+                            <p class="item-date"><time datetime="2018-11-17T21:22:01.000Z" itemprop="datePublished">2018-11-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
                             <p class="item-title"><a href="/2018/08/26/How-to-solve-a-DHCP-issue-with-Fedora/" class="title">How to solve a DHCP issue with Fedora</a></p>
                             <p class="item-date"><time datetime="2018-08-26T22:01:53.000Z" itemprop="datePublished">2018-08-26</time></p>
                         </div>
@@ -527,7 +667,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -536,7 +676,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dhcp/">dhcp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fedora/">fedora</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/miband/">miband</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dhcp/">dhcp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fedora/">fedora</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jasper/">jasper</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/miband/">miband</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-boot/">spring boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sqlite/">sqlite</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -545,7 +685,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/dhcp/" style="font-size: 10px;">dhcp</a> <a href="/tags/fedora/" style="font-size: 10px;">fedora</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/miband/" style="font-size: 10px;">miband</a>
+            <a href="/tags/dhcp/" style="font-size: 10px;">dhcp</a> <a href="/tags/fedora/" style="font-size: 10px;">fedora</a> <a href="/tags/jasper/" style="font-size: 10px;">jasper</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/miband/" style="font-size: 10px;">miband</a> <a href="/tags/spring-boot/" style="font-size: 10px;">spring boot</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a>
         </div>
     </div>
 
